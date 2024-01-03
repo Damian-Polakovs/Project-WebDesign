@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="gym,shop,brand">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>SilkSavvy</title>
+</head>
+<body>
+    <header>
+    <div class="nav container">
+        <i class='bx bxs-shopping-bag' id="cart-icon"></i>
+
+        <div class="cart">
+            <h2 class="cart-title">Cart</h2>
+            <div class="cart-content">
+                <div class="cart-box">
+                
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <button type="button" class="btn-buy">Buy Now</button>
+                <i class="bx bx-x" id="close-cart"></i>
+            </div>
+        </div>
+
+    </div>
+    </header>
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a href="home.html" class="header-icon-link">
+          <img src="Images/Screenshot 2024-01-02 141607.png" alt="SilkSavvy Icon" class="header-icon">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">SilkSavvy</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login/Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="checkout.html">Checkout</a>
+              </li>
+              
+            </ul>
+  
+          </div>
+        </div>
+      </div>
+    </nav>
+    <form>
+      <div class="search">
+        <input type="search" id="searchBar" name="searchBar" placeholder="Search">
+      </div>
+    </form>
+
+    <section class="shop container">
+        <h2 class="section-title">Products</h2>
+        <div class="shop-content">
+            <div class="product-box">
+                <img src="Images/Clothing1.webp" alt="Vest" class="product-img">
+                <h2 class="product-title">Gym Vest</h2>
+                <p class="price">€11</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <div class="product-box">
+                <img src="Images/Clothing2.jpg" alt="Muscle-Fit-top" class="product-img">
+                <h2 class="product-title">Muscle Fit Top</h2>
+                <p class="price">€19.99</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <div class="product-box">
+                <img src="Images/Clothing3.jpg" alt="Long-sleeve" class="product-img">
+                <h2 class="product-title">Long Sleeve</h2>
+                <p class="price">€12.30</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <div class="product-box">
+                <img src="Images/Clothing4.webp" alt="Crop-top" class="product-img">
+                <h2 class="product-title">Crop Top</h2>
+                <p class="price">€7.99</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <div class="product-box">
+                <img src="Images/Clothing5.webp" alt="White-shirt" class="product-img">
+                <h2 class="product-title">White T-shirt</h2>
+                <p class="price">€8</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <div class="product-box">
+                <img src="Images/Clothing6.webp" alt="Joggers" class="product-img">
+                <h2 class="product-title">Joggers</h2>
+                <p class="price">€20</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+    <footer>
+      <div class="footerContainer">
+        <div class="footerNav">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footerBottom">
+          <p>Copyright &copy; 2023; By Damian Polakovs
+          </p>
+        </div>
+    
+      </div>
+    </footer>
+    <script src="shop.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>

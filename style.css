@@ -1,0 +1,393 @@
+img{
+  width:100%;
+}
+body {
+    font-family: Arial, sans-serif;
+  }
+  .container{
+    max-width: 1068px;
+    margin:auto;
+    width: 100%;
+  }
+  .nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 0;
+  }
+  #cart-icon{
+    position:relative;
+    z-index:1100;
+    font-size:2rem;
+    cursor:pointer;
+  }
+  section{
+    padding:4rem 0 3rem;
+  }
+  .section-title{
+    font-size:1.5rem;
+    font-weight:600;
+    text-align:center;
+  }
+  .shop{
+    margin-top:2rem;
+  }
+  .shop-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap:1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .product-box{
+    position: relative;
+  }
+  .product-box:hover{
+    padding:10px;
+    border: 1px solid black;
+    transition:0.4s;
+
+  }
+  .product-img{
+    width:100%;
+    height:auto;
+    margin-bottom:0.5rem;
+  }
+  .product-title{
+    font-size: 1.1rem;
+    font-weight:600;
+    text-transform:uppercase;
+    margin-bottom:0.5rem;
+  }
+  .price{
+    font-weight:500;
+  }
+  .add-cart{
+    position:absolute;
+    bottom:0;
+    right:0;
+    padding:10px;
+    background:black;
+    color:white;
+    cursor: pointer;
+  }
+  .add-cart:hover{
+    background: black;
+  }
+  .cart{
+    position:fixed;
+    top:0;
+    right:0;
+    width: 300px;
+    height:100%;
+    overflow-y:auto;
+    transform:translateX(100%);
+    transition:transform 0.3s ease-in-out;
+    z-index:1000;
+    padding:20px;
+  }
+  .cart.active{
+    transform:translateX(0);
+  }
+  .cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap:1rem;
+    margin-top:1rem;
+  }
+  .cart-img{
+    width:100px;
+    height: 100px;
+    object-fit: contain;
+    padding:10px;
+  }
+
+  .detail-box{
+    display:grid;
+    row-gap:0.5rem;
+  }
+
+  .cart-product-title{
+    font-size:1.2rem;
+    text-transform:uppercase;
+  }
+  .cart-quantity{
+    width:2.4rem;
+    text-align:center;
+    font-size:1rem;
+  }
+  .total{
+    display:flex;
+    justify-content: flex-end;
+    margin-top:1.5rem;
+  }
+  .total-title{
+    font-size:1rem;
+    font-weight:600;
+    
+  }
+  .total-price{
+    margin-left:0.5rem;
+  }
+  .cart-remove{
+    font-size:24px;
+    cursor:pointer;
+  }
+  .btn-buy{
+    display:flex;
+    margin:1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    font-size: 1rem;
+    font-weight:500;
+    cursor:pointer;
+  }
+  #close-cart{
+    position:absolute;
+    top:1rem;
+    right:0.8rem;
+    font-size:2rem;
+    cursor:pointer;
+  }
+  /*Breakpoints*/
+  @media(max-width:1080px){
+    .nav{
+      padding: 3rem 0 2rem;
+    }
+    section{
+      padding: 3rem 0 2rem;
+    }
+    .container{
+      margin: 0 auto;
+      width:90;
+    }
+    .shop{
+      margin-top:2rem !important;
+    }
+  }
+  @media(max-width:400px){
+    .nav{
+      padding:11px;
+    }
+    .cart{
+      width:320px;
+    }
+  }
+  @media(max-width:360px){
+    .shop{
+      margin-top: 1rem !important;
+    }
+    .cart{
+      width:280px;
+    }
+  }
+  h1 a{
+    text-decoration: none;
+    color:black;
+  }
+  .container-fluid{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  .header-icon{
+    height: 45px;
+    width: 100px;
+  }
+  .header-icon{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+  nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .bg-img-1{
+    background-image: url("Images/e06221_7275580cc72b4f6f82b089d72f82704b~mv2.webp");
+    opacity: 0.6;
+  }
+  .bg-img-2{
+    background-image: url("Images/198833655-my-boxing-outfit-is-next-level-high-angle-shot-of-boxing-essentials-placed-on-top-of-a-dark.jpg");
+    opacity: 0.6;
+  }
+  .bg-img-3{
+    background-image: url("Images/istockphoto-466367844-612x612.jpg");
+    opacity: 0.6;
+  }
+  .carousel-image{
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .search{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width:max-content;
+    display:flex;
+    align-items:center;
+    padding: 14px;
+    border-radius:28px;
+    background:#f6f6f6;
+  }
+  .search-input{
+    font-size:16px;
+    font-family: 'Lexend', sans-serif;
+    color:#333333;
+    outline:none;
+    border:none;
+    background: transparent;
+
+  }
+  .login{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(119, 115, 115);
+    color:#f6f6f6;
+  }
+  .login h1{
+    font-size:36px;
+    text-align:center;
+  }
+  .navbar{
+    background-color: rgb(187, 187, 187);
+    z-index:1000;
+  }
+  .navbar-toggler{
+    color:white;
+  }
+  .navbar-nav {
+    background-color: rgb(175, 173, 173); 
+  }
+  .navbar-nav .nav-link {
+    color: black;
+  }
+  .navbar-brand img {
+    height: 45px;
+    width: 90px;
+  }
+
+  .mb-3 input{
+    width:100%;
+    height: 100%;
+    border-radius: 40px;
+  }
+
+  .mb-3.form-check {
+    text-align: center;
+  }
+
+  .mb-3.form-check label {
+    display: block; 
+  }
+
+  .mb-3 .form-check input{
+    margin-right: 5px;
+  }
+  .loginbtn{
+    border-radius:50px;
+  }
+  footer{
+    background-color: black;
+  }
+  .footerContainer{
+    width:100%;
+    padding: 70px 30px 20px;
+  }
+  .footerNav{
+    margin:30px 0;
+  }
+
+  .footerNav ul{
+    display:flex;
+    justify-content: center;
+  }
+
+  .footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration:none;
+    font-size:1.3em;
+    opacity:0.7;
+    transition:0.5s;
+  }
+
+  .footerNav ul li a:hover{
+    opacity:1;
+  }
+  .footerBottom{
+    background-color:black;
+    padding:20px;
+    text-align: center;
+  }
+  .footerBottom p{
+    color:white;
+  }
+
+  @media(max-width:700px){
+    .footerNav ul{
+      flex-direction: column;
+    }
+    .footerNav ul li{
+      width:100%;
+      text-align: center;
+      margin:10px;
+    }
+  }
+  .payment-container {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+
+  .payment-container input,
+  .payment-container button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .checkout-btn {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .checkout-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  .mb-3 {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  .mb-3 input,
+  .mb-3 button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+
+  
